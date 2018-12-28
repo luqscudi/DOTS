@@ -1,0 +1,79 @@
+!███▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀███░
+!██░	LUQSCUDI'S DOTS			 ██░
+!██░	Soruce: github.com/luqscudi	 ██░
+!██░	Email: luqscudi@gmail.com        ██░
+!██░ 	Path: 	~/.Xresources		 ██░
+!███▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄███░
+
+
+! XFT SETTINGS
+Xft.dpi:		96
+Xft.antialias:		true
+Xft.rgba:		rgb
+
+! FONT
+URxvt.font:		xft:SourceCodePro:pixelsize=16
+URxvt.boldFont:		xft:SourceCodePro:regular:pixelsize=16
+URxvt.italicFont:	xft:SourceCodePro:light:italic:pixelsize=16
+URxvt.boldItalicFont:	xft:SourceCodePro:regular:bold:italic:pixelsize=16
+URxvt.letterSpace: -1
+
+! TRANSPARENCY
+!URxvt.transparent:	true
+!URxvt.shading:		50
+!URxvt.tintColor:	#17141F
+!URxvt.tintColor:	#1b131e
+
+! FADE IF UNFOCUSED
+URxvt.fading:		40
+URxvt*fadeColor:	#BFBFBF
+
+! COLOURS
+URxvt.background:	#EFEFEF
+URxvt.foreground:	#434444
+
+! black dark/light
+*color0: #37474f
+*color8: #434444
+! red dark/light
+*color1: #EA4335
+*color9: #d81b60
+! green dark/light
+*color2: #34A853
+*color10: #1d904f
+! yellow dark/light
+*color3: #FBBC05
+*color11: #f49810
+! blue dark/light
+*color4: #4285F4
+*color12: #3b78e7
+! magenta dark/light
+*color5: #EE1780
+*color13: #d81b60
+! cyan dark/light
+*color6: #6DC9C4
+*color14: #93a1a1
+! white dark/light
+*color7: #d6d6d6
+*color15: #cbcbcb
+
+! SCROLLBAR
+URxvt.scrollBar:		true
+URxvt.jumpScroll:		false
+URxvt.scrollstyle:		plain
+URxvt.scrollColor:		#C1C1C1
+URxvt.thickness:		5
+URxvt.saveLines:		12000
+
+! EXTENTIONS
+URxvt*perl-ext-common: default,matcher,clipboard,url-select
+!(matcher)
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+URxvt.matcher.rend.0: Uline Bold fg7
+!(url-select)
+URxvt.url-select.launcher: /usr/bin/xdg-open
+URxvt.url-select.underline: true
+URxvt.keysym.M-Down: perl:url-select:select_next
+URxvt.keysym.M-Up: perl:url-select:select_previous
+
